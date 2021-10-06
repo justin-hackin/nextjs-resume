@@ -1,0 +1,21 @@
+{
+  "name": "Your Name's Professional Résumé",
+  "short_name": "Your Name",
+  "icons": [
+    {
+      "src": "/img/icons/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#33333d",
+  "description": "Your professional description.",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#0073e6"
+}
