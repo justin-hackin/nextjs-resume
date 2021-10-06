@@ -27,7 +27,7 @@ import {
 } from './prismic';
 
 export type SupportedCMS = 'prismic' | 'contentful';
-type RichText = PrismicRichText | ContentfulRichText;
+export type RichText = PrismicRichText | ContentfulRichText;
 
 export const apiEndpoint = process.env.CMS_ENDPOINT;
 export const accessToken = process.env.CMS_KEY;

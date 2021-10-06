@@ -5,15 +5,16 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 
 interface Props {
   personalInformation: CMSPersonalInformation<unknown>;
+  pdf?: boolean;
 }
 
 const AboutMe = (props: Props): JSX.Element => {
-  const { personalInformation } = props;
+  const { personalInformation, pdf = false } = props;
   const CMS = getCMSIntegration();
 
   return (
     <article>
-      <SectionHeader icon={faUser} text="About Me" />
+      <SectionHeader pdf={pdf} icon={faUser} text="About Me" />
       <CMS.RichTextComponent
         richText={personalInformation.about_me_description}
       />

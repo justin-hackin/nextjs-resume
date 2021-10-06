@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 
 interface Props {
   children?: ReactNode;
-  color?: 'light' | 'primary' | 'white';
+  color?: 'light' | 'primary' | 'white' | 'dark' | 'darker';
   pdf?: boolean;
 }
 
@@ -13,11 +13,13 @@ const Section = (props: Props): JSX.Element => {
   return (
     <section
       className={classnames({
+        'bg-dark': color === 'dark',
+        'bg-darker': color === 'darker',
         'bg-light': color === 'light',
         'bg-primary': color === 'primary',
-        'bg-white': color === 'white',
         'py-sm': !pdf,
         'py-xs': pdf,
+        'text-light': !pdf,
         'text-white': color === 'primary',
       })}
     >

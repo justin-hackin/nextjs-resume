@@ -23,10 +23,10 @@ const Footer = (props: Props): JSX.Element => {
         {!pdf && links && (
           <div className="row gx-0 justify-content-center">
             {links.map((link) => (
-              <div className="col-auto" key={link.href}>
+              <div className="col-auto" key={link.href.url}>
                 <a
                   className="d-block fa-3x"
-                  href={link.href}
+                  href={link.href.url}
                   rel="noopener noreferrer"
                   target="_blank"
                 >

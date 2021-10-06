@@ -21,7 +21,7 @@ export const educationalExperiences: CMSEducationalExperience<PrismicRichText>[]
 
 export const links: CMSLink[] = [
   {
-    href: 'https://github.com/colinhemphill',
+    href: { link_type: 'website', url: 'https://github.com/colinhemphill' },
     icon_name: 'github',
     id: '1',
     title: 'GitHub',

@@ -9,7 +9,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
       class="container"
     >
       <div
-        class="row align-items-center text-md-left text-center"
+        class="row align-items-center text-md-start text-center"
       >
         <div
           class="col-md"
@@ -20,7 +20,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
             Some Body
           </h1>
           <h2
-            class="text-white"
+            class="text-white mb-0"
           >
             Cool Person
           </h2>
@@ -31,11 +31,12 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
           <a
             class="btn btn-dark btn-lg"
             href="/api/pdf"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-file-pdf fa-w-12 mr-xxxs"
+              class="svg-inline--fa fa-file-pdf fa-w-12 me-xxxs"
               data-icon="file-pdf"
               data-prefix="fas"
               focusable="false"
@@ -55,7 +56,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
     </div>
   </header>
   <section
-    class="py-sm bg-white"
+    class="bg-dark py-sm text-light"
   >
     <div
       class="container"
@@ -69,11 +70,12 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
           <article>
             <h3>
               <span
-                class="fa-layers fa-fw mr-xxxs"
+                class="fa-layers fa-fw me-xxxs"
               >
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-circle fa-w-16 "
+                  color="white"
                   data-icon="circle"
                   data-prefix="fas"
                   focusable="false"
@@ -89,7 +91,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-user fa-w-14 "
-                  color="white"
+                  color="var(--bs-dark)"
                   data-icon="user"
                   data-prefix="fas"
                   focusable="false"
@@ -126,11 +128,12 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
           <article>
             <h3>
               <span
-                class="fa-layers fa-fw mr-xxxs"
+                class="fa-layers fa-fw me-xxxs"
               >
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-circle fa-w-16 "
+                  color="white"
                   data-icon="circle"
                   data-prefix="fas"
                   focusable="false"
@@ -146,7 +149,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-id-card fa-w-18 "
-                  color="white"
+                  color="var(--bs-dark)"
                   data-icon="id-card"
                   data-prefix="fas"
                   focusable="false"
@@ -176,11 +179,22 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
               class="list-unstyled"
             >
               <li>
-                <strong>
-                  Location:
-                </strong>
-                 
-                Somewhere Only We Know
+                <div
+                  class="row mt-md-0 mt-xxxs"
+                >
+                  <div
+                    class="col-lg-2 col-sm-3"
+                  >
+                    <strong>
+                      Location:
+                    </strong>
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    Somewhere Only We Know
+                  </div>
+                </div>
               </li>
             </ul>
           </article>
@@ -191,11 +205,12 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
       >
         <h3>
           <span
-            class="fa-layers fa-fw mr-xxxs"
+            class="fa-layers fa-fw me-xxxs"
           >
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-circle fa-w-16 "
+              color="white"
               data-icon="circle"
               data-prefix="fas"
               focusable="false"
@@ -211,7 +226,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-check fa-w-16 "
-              color="white"
+              color="var(--bs-dark)"
               data-icon="check"
               data-prefix="fas"
               focusable="false"
@@ -241,7 +256,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
           class="row mt-xxs"
         >
           <div
-            class="col-lg col-print-12"
+            class="col-lg"
           >
             <h4
               class="h5 text-uppercase"
@@ -307,18 +322,19 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
     </div>
   </section>
   <section
-    class="py-sm bg-light"
+    class="bg-darker py-sm text-light"
   >
     <div
       class="container"
     >
       <h3>
         <span
-          class="fa-layers fa-fw mr-xxxs"
+          class="fa-layers fa-fw me-xxxs"
         >
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-circle fa-w-16 "
+            color="white"
             data-icon="circle"
             data-prefix="fas"
             focusable="false"
@@ -334,7 +350,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-briefcase fa-w-16 "
-            color="white"
+            color="var(--bs-dark)"
             data-icon="briefcase"
             data-prefix="fas"
             focusable="false"
@@ -378,7 +394,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
         <div>
           <svg
             aria-hidden="true"
-            class="svg-inline--fa fa-calendar fa-w-14 mr-xxxs"
+            class="svg-inline--fa fa-calendar fa-w-14 me-xxxs"
             data-icon="calendar"
             data-prefix="far"
             focusable="false"
@@ -406,18 +422,19 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
     </div>
   </section>
   <section
-    class="py-sm bg-white"
+    class="bg-dark py-sm text-light"
   >
     <div
       class="container"
     >
       <h3>
         <span
-          class="fa-layers fa-fw mr-xxxs"
+          class="fa-layers fa-fw me-xxxs"
         >
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-circle fa-w-16 "
+            color="white"
             data-icon="circle"
             data-prefix="fas"
             focusable="false"
@@ -433,7 +450,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-graduation-cap fa-w-20 "
-            color="white"
+            color="var(--bs-dark)"
             data-icon="graduation-cap"
             data-prefix="fas"
             focusable="false"
@@ -470,7 +487,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
         <div>
           <svg
             aria-hidden="true"
-            class="svg-inline--fa fa-university fa-w-16 mr-xxxs"
+            class="svg-inline--fa fa-university fa-w-16 me-xxxs"
             data-icon="university"
             data-prefix="fas"
             focusable="false"
@@ -496,7 +513,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
     </div>
   </section>
   <section
-    class="py-sm bg-light"
+    class="bg-darker py-sm text-light"
   >
     <div
       class="container"
@@ -504,11 +521,12 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
       <article>
         <h3>
           <span
-            class="fa-layers fa-fw mr-xxxs"
+            class="fa-layers fa-fw me-xxxs"
           >
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-circle fa-w-16 "
+              color="white"
               data-icon="circle"
               data-prefix="fas"
               focusable="false"
@@ -524,7 +542,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-dice-d20 fa-w-15 "
-              color="white"
+              color="var(--bs-dark)"
               data-icon="dice-d20"
               data-prefix="fas"
               focusable="false"
@@ -548,7 +566,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
               </g>
             </svg>
           </span>
-          Hobbies & Interests
+          Related Personal Works
         </h3>
         <p>
           Test
@@ -563,7 +581,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
       class="container"
     >
       <div
-        class="row no-gutters justify-content-center"
+        class="row gx-0 justify-content-center"
       >
         <div
           class="col-auto"
@@ -633,7 +651,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
         class="mt-xxs"
       >
         Copyright ©
-        2020
+        2021
          
         Some Body
       </div>
@@ -699,7 +717,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
       class="container"
     >
       <div
-        class="row align-items-center text-md-left text-center"
+        class="row align-items-center text-md-start text-center"
       >
         <div
           class="col-md"
@@ -710,7 +728,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
             Some Body
           </h1>
           <h2
-            class="text-white"
+            class="text-white mb-0"
           >
             Cool Person
           </h2>
@@ -721,11 +739,12 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
           <a
             class="btn btn-dark btn-lg"
             href="/api/pdf"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-file-pdf fa-w-12 mr-xxxs"
+              class="svg-inline--fa fa-file-pdf fa-w-12 me-xxxs"
               data-icon="file-pdf"
               data-prefix="fas"
               focusable="false"
@@ -745,7 +764,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
     </div>
   </header>
   <section
-    class="py-sm bg-white"
+    class="bg-dark py-sm text-light"
   >
     <div
       class="container"
@@ -759,11 +778,12 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
           <article>
             <h3>
               <span
-                class="fa-layers fa-fw mr-xxxs"
+                class="fa-layers fa-fw me-xxxs"
               >
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-circle fa-w-16 "
+                  color="white"
                   data-icon="circle"
                   data-prefix="fas"
                   focusable="false"
@@ -779,7 +799,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-user fa-w-14 "
-                  color="white"
+                  color="var(--bs-dark)"
                   data-icon="user"
                   data-prefix="fas"
                   focusable="false"
@@ -816,11 +836,12 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
           <article>
             <h3>
               <span
-                class="fa-layers fa-fw mr-xxxs"
+                class="fa-layers fa-fw me-xxxs"
               >
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-circle fa-w-16 "
+                  color="white"
                   data-icon="circle"
                   data-prefix="fas"
                   focusable="false"
@@ -836,7 +857,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-id-card fa-w-18 "
-                  color="white"
+                  color="var(--bs-dark)"
                   data-icon="id-card"
                   data-prefix="fas"
                   focusable="false"
@@ -866,11 +887,22 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
               class="list-unstyled"
             >
               <li>
-                <strong>
-                  Location:
-                </strong>
-                 
-                Somewhere Only We Know
+                <div
+                  class="row mt-md-0 mt-xxxs"
+                >
+                  <div
+                    class="col-lg-2 col-sm-3"
+                  >
+                    <strong>
+                      Location:
+                    </strong>
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    Somewhere Only We Know
+                  </div>
+                </div>
               </li>
             </ul>
           </article>
@@ -881,11 +913,12 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
       >
         <h3>
           <span
-            class="fa-layers fa-fw mr-xxxs"
+            class="fa-layers fa-fw me-xxxs"
           >
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-circle fa-w-16 "
+              color="white"
               data-icon="circle"
               data-prefix="fas"
               focusable="false"
@@ -901,7 +934,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-check fa-w-16 "
-              color="white"
+              color="var(--bs-dark)"
               data-icon="check"
               data-prefix="fas"
               focusable="false"
@@ -931,7 +964,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
           class="row mt-xxs"
         >
           <div
-            class="col-lg col-print-12"
+            class="col-lg"
           >
             <h4
               class="h5 text-uppercase"
@@ -997,18 +1030,19 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
     </div>
   </section>
   <section
-    class="py-sm bg-light"
+    class="bg-darker py-sm text-light"
   >
     <div
       class="container"
     >
       <h3>
         <span
-          class="fa-layers fa-fw mr-xxxs"
+          class="fa-layers fa-fw me-xxxs"
         >
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-circle fa-w-16 "
+            color="white"
             data-icon="circle"
             data-prefix="fas"
             focusable="false"
@@ -1024,7 +1058,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-briefcase fa-w-16 "
-            color="white"
+            color="var(--bs-dark)"
             data-icon="briefcase"
             data-prefix="fas"
             focusable="false"
@@ -1068,7 +1102,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
         <div>
           <svg
             aria-hidden="true"
-            class="svg-inline--fa fa-calendar fa-w-14 mr-xxxs"
+            class="svg-inline--fa fa-calendar fa-w-14 me-xxxs"
             data-icon="calendar"
             data-prefix="far"
             focusable="false"
@@ -1096,18 +1130,19 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
     </div>
   </section>
   <section
-    class="py-sm bg-white"
+    class="bg-dark py-sm text-light"
   >
     <div
       class="container"
     >
       <h3>
         <span
-          class="fa-layers fa-fw mr-xxxs"
+          class="fa-layers fa-fw me-xxxs"
         >
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-circle fa-w-16 "
+            color="white"
             data-icon="circle"
             data-prefix="fas"
             focusable="false"
@@ -1123,7 +1158,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-graduation-cap fa-w-20 "
-            color="white"
+            color="var(--bs-dark)"
             data-icon="graduation-cap"
             data-prefix="fas"
             focusable="false"
@@ -1160,7 +1195,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
         <div>
           <svg
             aria-hidden="true"
-            class="svg-inline--fa fa-university fa-w-16 mr-xxxs"
+            class="svg-inline--fa fa-university fa-w-16 me-xxxs"
             data-icon="university"
             data-prefix="fas"
             focusable="false"
@@ -1186,7 +1221,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
     </div>
   </section>
   <section
-    class="py-sm bg-light"
+    class="bg-darker py-sm text-light"
   >
     <div
       class="container"
@@ -1194,11 +1229,12 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
       <article>
         <h3>
           <span
-            class="fa-layers fa-fw mr-xxxs"
+            class="fa-layers fa-fw me-xxxs"
           >
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-circle fa-w-16 "
+              color="white"
               data-icon="circle"
               data-prefix="fas"
               focusable="false"
@@ -1214,7 +1250,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-dice-d20 fa-w-15 "
-              color="white"
+              color="var(--bs-dark)"
               data-icon="dice-d20"
               data-prefix="fas"
               focusable="false"
@@ -1238,7 +1274,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
               </g>
             </svg>
           </span>
-          Hobbies & Interests
+          Related Personal Works
         </h3>
         <p>
           My hobbies.
@@ -1253,7 +1289,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
       class="container"
     >
       <div
-        class="row no-gutters justify-content-center"
+        class="row gx-0 justify-content-center"
       >
         <div
           class="col-auto"
@@ -1323,7 +1359,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
         class="mt-xxs"
       >
         Copyright ©
-        2020
+        2021
          
         Some Body
       </div>

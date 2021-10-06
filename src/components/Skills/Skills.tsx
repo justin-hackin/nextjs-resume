@@ -6,14 +6,15 @@ import StarRating from '../StarRating/StarRating';
 
 interface Props {
   skills: CMSSkills[];
+  pdf?: boolean;
 }
 
 const Skills = (props: Props): JSX.Element => {
-  const { skills } = props;
+  const { skills, pdf = false } = props;
 
   return (
     <article className="mt-xs">
-      <SectionHeader icon={faCheck} text="Skills & Expertise" />
+      <SectionHeader pdf={pdf} icon={faCheck} text="Skills & Expertise" />
       <div className="row mt-xxs">
         {skills.map((skill, index) => (
           <div

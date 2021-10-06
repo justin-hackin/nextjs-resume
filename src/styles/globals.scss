@@ -4,7 +4,8 @@ $grid-gutter-width: $spacer-xxs * 2;
 $theme-colors: (
   'primary': $primary,
   'light': $light,
-  'dark': $dark
+  'darker': $darker,
+  'dark': $dark,
 );
 $spacers: ();
 $spacers: map-merge(

@@ -5,7 +5,7 @@ import {
 import indefinite from 'indefinite';
 import { InferGetStaticPropsType } from 'next';
 import React from 'react';
-import { getCMSIntegration } from '../cms/';
+import { getCMSIntegration, RichText } from '../cms/';
 import AboutMe from '../components/Articles/AboutMe';
 import ContactInformation from '../components/Articles/ContactInformation';
 import HobbiesAndInterests from '../components/Articles/HobbiesAndInterests';
@@ -40,15 +40,20 @@ export const getStaticProps = async () => {
   };
 };
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>;
+interface Props extends InferGetStaticPropsType<typeof getStaticProps> {
+  privateInformation?: CMSPrivateInformation<RichText>[];
+  secret?: string;
+}
 
-const ResumePage = (props: Props): JSX.Element => {
+const ResumePageWeb = (props: Props): JSX.Element => {
   const {
     educationalExperiences,
     links,
     personalInformation,
     professionalExperiences,
     skills,
+    secret,
+    privateInformation,
   } = props;
   const fullName = getFullName(personalInformation);
   const jobTitle = indefinite(personalInformation.job_title);
@@ -62,22 +67,29 @@ const ResumePage = (props: Props): JSX.Element => {
         title={`Résumé | ${fullName} | ${personalInformation.location}`}
       />
 
-      <Header subtitle={personalInformation.job_title} title={fullName} />
+      <Header
+        secret={secret}
+        subtitle={personalInformation.job_title}
+        title={fullName}
+      />
 
-      <Section color="white">
+      <Section color="dark">
         <div className="row">
           <div className="col-md">
             <AboutMe personalInformation={personalInformation} />
           </div>
           <div className="col-md mt-md-0 mt-xs">
-            <ContactInformation personalInformation={personalInformation} />
+            <ContactInformation
+              personalInformation={personalInformation}
+              privateInformation={privateInformation}
+            />
           </div>
         </div>
 
         <Skills skills={skills} />
       </Section>
 
-      <Section color="light">
+      <Section color="darker">
         <SectionHeader icon={faBriefcase} text="Professional Experience" />
         {professionalExperiences.map((experience) => (
           <ProfessionalItem
@@ -101,7 +113,7 @@ const ResumePage = (props: Props): JSX.Element => {
         ))}
       </Section>
 
-      <Section color="white">
+      <Section color="dark">
         <SectionHeader icon={faGraduationCap} text="Education" />
         {educationalExperiences.map((experience) => (
           <EducationItem
@@ -119,7 +131,7 @@ const ResumePage = (props: Props): JSX.Element => {
         ))}
       </Section>
 
-      <Section color="light">
+      <Section color="darker">
         <HobbiesAndInterests personalInformation={personalInformation} />
       </Section>
 
@@ -128,4 +140,4 @@ const ResumePage = (props: Props): JSX.Element => {
   );
 };
 
-export default ResumePage;
+export default ResumePageWeb;

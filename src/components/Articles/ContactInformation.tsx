@@ -6,15 +6,16 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 interface Props {
   personalInformation: CMSPersonalInformation<unknown>;
   privateInformation?: CMSPrivateInformation<unknown>[];
+  pdf?: boolean;
 }
 
 const ContactInformation = (props: Props): JSX.Element => {
-  const { personalInformation, privateInformation } = props;
+  const { personalInformation, privateInformation, pdf = false } = props;
   const CMS = getCMSIntegration();
 
   return (
     <article>
-      <SectionHeader icon={faIdCard} text="Contact Information" />
+      <SectionHeader pdf={pdf} icon={faIdCard} text="Contact Information" />
       <ul className="list-unstyled">
         <li>
           <div className="row mt-md-0 mt-xxxs">

@@ -5,7 +5,7 @@ import {
 import indefinite from 'indefinite';
 import { InferGetStaticPropsType } from 'next';
 import React from 'react';
-import { getCMSIntegration } from '../cms';
+import { getCMSIntegration, RichText } from '../cms';
 import AboutMe from '../components/Articles/AboutMe';
 import ContactInformation from '../components/Articles/ContactInformation';
 import HobbiesAndInterests from '../components/Articles/HobbiesAndInterests';
@@ -38,14 +38,17 @@ export const getStaticProps = async () => {
   };
 };
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>;
+interface Props extends InferGetStaticPropsType<typeof getStaticProps> {
+  privateInformation?: CMSPrivateInformation<RichText>[];
+}
 
-const ResumePage = (props: Props): JSX.Element => {
+const ResumePagePDF = (props: Props): JSX.Element => {
   const {
     educationalExperiences,
     personalInformation,
     professionalExperiences,
     skills,
+    privateInformation,
   } = props;
   const fullName = getFullName(personalInformation);
   const jobTitle = indefinite(personalInformation.job_title);
@@ -67,16 +70,24 @@ const ResumePage = (props: Props): JSX.Element => {
             title={fullName}
           />
           <Section color="light" pdf>
-            <AboutMe personalInformation={personalInformation} />
+            <AboutMe pdf personalInformation={personalInformation} />
             <div className="mt-xs" />
-            <ContactInformation personalInformation={personalInformation} />
-            <Skills skills={skills} />
+            <ContactInformation
+              pdf
+              personalInformation={personalInformation}
+              privateInformation={privateInformation}
+            />
+            <Skills pdf skills={skills} />
           </Section>
         </div>
 
         <div className={styles.pdfMain}>
           <Section color="white" pdf>
-            <SectionHeader icon={faBriefcase} text="Professional Experience" />
+            <SectionHeader
+              pdf
+              icon={faBriefcase}
+              text="Professional Experience"
+            />
             {professionalExperiences.map((experience) => (
               <ProfessionalItem
                 end_date={
@@ -99,9 +110,9 @@ const ResumePage = (props: Props): JSX.Element => {
               />
             ))}
 
-            <div className="mt-xs" />
-
-            <SectionHeader icon={faGraduationCap} text="Education" />
+            {/* @ts-ignore */}
+            <div style={{ pageBreakBefore: 'always' }} className="mt-xs" />
+            <SectionHeader pdf icon={faGraduationCap} text="Education" />
             {educationalExperiences.map((experience) => (
               <EducationItem
                 achievement_description={
@@ -120,7 +131,10 @@ const ResumePage = (props: Props): JSX.Element => {
 
             <div className="mt-xs" />
 
-            <HobbiesAndInterests personalInformation={personalInformation} />
+            <HobbiesAndInterests
+              pdf
+              personalInformation={personalInformation}
+            />
           </Section>
         </div>
       </div>
@@ -128,4 +142,4 @@ const ResumePage = (props: Props): JSX.Element => {
   );
 };
 
-export default ResumePage;
+export default ResumePagePDF;

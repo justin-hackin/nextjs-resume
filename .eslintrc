@@ -31,6 +31,7 @@
     "stylelint.config.js"
   ],
   "rules": {
+    "@typescript-eslint/ban-ts-comment": 0,
     "react/prop-types": 0,
     "sort-imports": "off",
     "sort-keys": "warn",
