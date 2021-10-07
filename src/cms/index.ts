@@ -1,4 +1,5 @@
 import { CMSLink } from '../_types/CMSLink';
+import { CMSPrivateInformation } from '../_types/CMSPrivateInformation';
 import {
   contentfulCMSLink,
   contentfulCMSName,

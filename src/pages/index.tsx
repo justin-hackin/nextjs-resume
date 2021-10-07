@@ -18,6 +18,7 @@ import Section from '../components/Section/Section';
 import SectionHeader from '../components/SectionHeader/SectionHeader';
 import Skills from '../components/Skills/Skills';
 import { formatDate, getFullName } from '../helpers';
+import { CMSPrivateInformation } from '../_types/CMSPrivateInformation';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const getStaticProps = async () => {

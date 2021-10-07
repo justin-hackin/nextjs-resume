@@ -176,7 +176,7 @@ exports[`Render the main page Uses a Contentful integration 1`] = `
               Contact Information
             </h3>
             <ul
-              class="list-unstyled"
+              class="list-unstyled fa-ul"
             >
               <li>
                 <div
@@ -884,7 +884,7 @@ exports[`Render the main page Uses a Prismic integration 1`] = `
               Contact Information
             </h3>
             <ul
-              class="list-unstyled"
+              class="list-unstyled fa-ul"
             >
               <li>
                 <div

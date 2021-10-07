@@ -4,6 +4,7 @@ import * as contentful from 'contentful';
 import React from 'react';
 import { accessToken, apiEndpoint } from '.';
 import { CMSLink } from '../_types/CMSLink';
+import { CMSPrivateInformation } from '../_types/CMSPrivateInformation';
 
 export type ContentfulRichText = Document;
 type PersonalInformation = CMSPersonalInformation<ContentfulRichText>;
