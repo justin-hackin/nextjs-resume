@@ -1,5 +1,5 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { fab as fabFreeBrand } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {
   faMapMarkerAlt,
   faPhoneAlt,
@@ -11,7 +11,7 @@ import React from 'react';
 import '../styles/globals.scss';
 
 config.autoAddCss = false;
-library.add(fabFreeBrand, faMapMarkerAlt, faPhoneAlt, faEnvelopeSquare);
+library.add(faGithub, faLinkedin, faMapMarkerAlt, faPhoneAlt, faEnvelopeSquare);
 const MyApp = ({ Component, pageProps }: AppPropsType): JSX.Element => {
   return (
     <>
