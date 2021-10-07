@@ -99,3 +99,7 @@ You should definitely consider updating _everyting_ in the `/public` folder to m
 ### Reducing Bundle Sizes
 
 The best option for reducing bundle sizes and improving performance is to modify the Font Awesome config to meet your needs. In `src/pages/_app.tsx`, we are currently importing the entire Font Awesome Brands (FAB) library in order to support all potential brand icons. Once you have determined which icons you intend to use, you should change `library.add(fab)` to only import specific icons that you need. See the [Font Awesome React documentation](https://fontawesome.com/how-to-use/on-the-web/using-with/react#using) for more details.
+
+### Attribution
+
+Site icon is derivation of Font Awesome `briefcase` logo under [the following license](https://fontawesome.com/license).
