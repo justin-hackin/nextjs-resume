@@ -9,6 +9,10 @@
     'footer footer';
   grid-template-columns: 33% 1fr;
   grid-template-rows: 1fr 0;
+
+  article a {
+    color: variables.$primary-medium;
+  }
 }
 .pdfSidebar {
   background-color: variables.$light;

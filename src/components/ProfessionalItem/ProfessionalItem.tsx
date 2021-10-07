@@ -20,10 +20,8 @@ const ProfessionalItem = (props: Props): JSX.Element => {
   return (
     <article className={pdf ? 'mt-xxs' : 'mt-xs'}>
       <h4 className="d-inline-block">
-        <span className="bg-dark px-xxxs text-white rounded">
-          {position_title}
-        </span>{' '}
-        at {organization_name}
+        <span className="text-decoration-underline">{position_title}</span> at{' '}
+        {organization_name}
       </h4>
       <div>
         <FontAwesomeIcon className="me-xxxs" icon={faCalendar} />
