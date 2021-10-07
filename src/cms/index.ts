@@ -44,7 +44,7 @@ export interface CMSIntegration {
   getPersonalInformation: () => Promise<CMSPersonalInformation<RichText>>;
   getPrivateInformation: () => Promise<CMSPrivateInformation<RichText>[]>;
   getProfessionalExperiences: () => Promise<
-    CMSPRofessionalExperience<RichText>[]
+    CMSProfessionalExperience<RichText>[]
   >;
   getSkills: () => Promise<CMSSkills[]>;
   link: string;

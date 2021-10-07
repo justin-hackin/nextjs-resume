@@ -1,4 +1,4 @@
-interface CMSPRofessionalExperience<RichTextType> {
+interface CMSProfessionalExperience<RichTextType> {
   end_date?: string;
   id: string;
   is_current?: boolean;

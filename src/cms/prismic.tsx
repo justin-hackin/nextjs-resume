@@ -13,7 +13,7 @@ import { CMSPrivateInformation } from '../_types/CMSPrivateInformation';
 export type PrismicRichText = RichTextBlock[];
 type PersonalInformation = CMSPersonalInformation<PrismicRichText>;
 type PrivateInformation = CMSPrivateInformation<PrismicRichText>;
-type ProfessionalExperience = CMSPRofessionalExperience<PrismicRichText>;
+type ProfessionalExperience = CMSProfessionalExperience<PrismicRichText>;
 type EducationalExperience = CMSEducationalExperience<PrismicRichText>;
 
 export const prismicCMSName = 'Prismic';

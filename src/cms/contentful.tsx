@@ -9,7 +9,7 @@ import { CMSPrivateInformation } from '../_types/CMSPrivateInformation';
 export type ContentfulRichText = Document;
 type PersonalInformation = CMSPersonalInformation<ContentfulRichText>;
 type PrivateInformation = CMSPrivateInformation<ContentfulRichText>;
-type ProfessionalExperience = CMSPRofessionalExperience<ContentfulRichText>;
+type ProfessionalExperience = CMSProfessionalExperience<ContentfulRichText>;
 type EducationalExperience = CMSEducationalExperience<ContentfulRichText>;
 
 export const contentfulCMSName = 'Contentful';

@@ -83,7 +83,7 @@ export const personalInformation: CMSPersonalInformation<ContentfulRichText> = {
   location: 'Somewhere Only We Know',
 };
 
-export const professionalExperiences: CMSPRofessionalExperience<ContentfulRichText>[] =
+export const professionalExperiences: CMSProfessionalExperience<ContentfulRichText>[] =
   [
     {
       end_date: null,

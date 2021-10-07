@@ -50,7 +50,7 @@ export const personalInformation: CMSPersonalInformation<PrismicRichText> = {
   location: 'Somewhere Only We Know',
 };
 
-export const professionalExperiences: CMSPRofessionalExperience<PrismicRichText>[] =
+export const professionalExperiences: CMSProfessionalExperience<PrismicRichText>[] =
   [
     {
       end_date: null,

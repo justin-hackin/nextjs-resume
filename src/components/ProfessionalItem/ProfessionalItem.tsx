@@ -2,7 +2,7 @@ import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-interface Props extends CMSPRofessionalExperience<JSX.Element> {
+interface Props extends CMSProfessionalExperience<JSX.Element> {
   pdf?: boolean;
 }
 
