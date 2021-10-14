@@ -1,5 +1,9 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faMapMarkerAlt,
   faPhoneAlt,
@@ -11,7 +15,14 @@ import React from 'react';
 import '../styles/globals.scss';
 
 config.autoAddCss = false;
-library.add(faGithub, faLinkedin, faMapMarkerAlt, faPhoneAlt, faEnvelopeSquare);
+library.add(
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faMapMarkerAlt,
+  faPhoneAlt,
+  faEnvelopeSquare,
+);
 const MyApp = ({ Component, pageProps }: AppPropsType): JSX.Element => {
   return (
     <>
