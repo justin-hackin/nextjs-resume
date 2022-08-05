@@ -14,10 +14,9 @@ interface Props {
 const Header = (props: Props): JSX.Element => {
   const { pdf = false, secret, subtitle, title } = props;
 
-  let pdfAPI = '/api/pdf';
-  if (secret) {
-    pdfAPI += `?secret=${secret}`;
-  }
+  const pdfURL = secret
+    ? `/resume_private-${secret}.pdf`
+    : '/resume_public.pdf';
 
   return (
     <header className={styles.header}>
@@ -36,7 +35,7 @@ const Header = (props: Props): JSX.Element => {
             <div className="col-md-auto mt-md-0 mt-xxs d-print-none d-block">
               <a
                 className="btn btn-dark btn-lg"
-                href={pdfAPI}
+                href={pdfURL}
                 rel="noopener noreferrer"
                 target="_blank"
               >

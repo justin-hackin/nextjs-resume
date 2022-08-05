@@ -111,8 +111,6 @@ const ResumePagePDF = (props: Props): JSX.Element => {
               />
             ))}
 
-            {/* @ts-ignore */}
-            <div style={{ pageBreakBefore: 'always' }} className="mt-xs" />
             <SectionHeader pdf icon={faGraduationCap} text="Education" />
             {educationalExperiences.map((experience) => (
               <EducationItem
