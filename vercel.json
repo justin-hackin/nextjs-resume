@@ -1,0 +1,3 @@
+{
+  "redirects": [{ "source": "/(.*)", "destination": "https://justin-barca-resume.vercel.app/$1" }]
+}
