@@ -1,5 +1,0 @@
-# Welcome, robot overlords!
-
-User-agent: *
-Disallow: /pdf
-Disallow: /private/
